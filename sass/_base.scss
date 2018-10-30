@@ -1,0 +1,35 @@
+$primary-font: 'Krub', sans-serif;
+$hero-font: 'PT Serif Caption', serif;
+
+$red: #EF3E4A;
+$green: #17C37B;
+$dark-green: rgb(6, 58, 36);
+
+$shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    background-color: #FEFEFE;
+    font-family: $primary-font;
+    overflow-x: hidden;
+}

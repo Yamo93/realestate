@@ -1,0 +1,79 @@
+.estimate {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url(../img/home_img.jpg);
+    background-position: center;
+    background-size: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 6rem;
+        color: #FEFEFE;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media screen and (max-width: 500px) {
+            font-size: 4.5rem;
+        }
+    }
+
+    &__options {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        @media screen and (max-width: 600px) {
+            width: 65%;
+        }
+
+        &-list {
+            width: 100%;
+            background-color: $green;
+            display: flex;
+            padding: 15px 25px;
+
+            &--item {
+                font-size: 2rem;
+                font-weight: 600;
+                color: darken($green, 20%);
+                cursor: pointer;
+                transition: all .3s;
+            }
+
+            &--item:hover {
+                color: lighten($green, 40%);
+            }
+
+            &--item:not(:last-child) {
+                margin-right: 10%;
+            }
+        }
+
+        &-search {
+            position: absolute;
+            bottom: -91%;
+            right: -5%;
+            width: 100%;
+            padding: 15px 25px;
+            background: linear-gradient(to bottom, rgba($dark-green, .8), rgba($dark-green, .9));
+            border: none;
+            font-family: inherit;
+            font-size: 1.6rem;
+            color: #FEFEFE;
+        }
+
+        &-search:focus {
+            outline: none;
+        }
+
+        &-search::placeholder {
+            font-size: 1.6rem;
+            color: rgba($green, .4);
+        }
+    }
+}
